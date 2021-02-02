@@ -1,76 +1,62 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  background-color: rgba(255, 242, 204, 0.4);
-}
-
-#sandbox {
- 
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-  height: 100vh;
-  align-items: center;
-  justify-content: space-around;
-  font-family: arial;
-  font-weight: bold;
-  color: white;
+    box-sizing: border-box;
+    margin: 0;
+  }
   
-}
-
-.spin-animation {
-  background-image: 
-    url("https://www.transparenttextures.com/patterns/natural-paper.png");
-  display: flex;
-  font-size: 50px;
-  width: 100px;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-              0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation: spin 4s cubic-bezier(.84,.13,.40,.96);
-}
+  body {
+    background-color: rgba(255, 242, 204, 0.4);
+  }
   
-@keyframes spin {
-  0% {transform:rotateY(0turn);}
-  100% {transform:rotateY(7turn);}
-}
-
-.one {
-  background-color: #dd202d;
-}
-
-.two {
-  animation-delay: 4s;
-  background-color: #6cbb93;
-}
-
-.three {
-  animation-delay: 8s;
-  background-color: #f0d095;
-}
-
-.four {
-  animation-delay: 12s;
-  background-color: #e0e334;
-}
-
-.five {
-  animation-delay: 16s;
-  background-color: #5756a4;
-}
-
-.six {
-  animation-delay: 20s;
-  background-color: #6ac5da;
-}
-
-.seven {
-  animation-delay: 24s;
-  background-color: #7abc4a;
-}
+  #sandbox {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #sandbox div {
+    background-image: url("natural-paper.png");
+    display: flex;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: spin 4s cubic-bezier(.84,.13,.40,.96);
+  }
+    
+  @keyframes spin {
+    0% {transform:rotateY(0turn);}
+    100% {transform:rotateY(7turn);}
+  }
+  
+  #sandbox div:nth-child(2) {
+    animation-delay: 4s;
+  }
+  
+  #sandbox div:nth-child(3) {
+    animation-delay: 8s;
+  }
+  
+  #sandbox div:nth-child(4) {
+    animation-delay: 12s;
+  }
+  
+  #sandbox div:nth-child(5) {
+    animation-delay: 16s;
+  }
+  
+  #sandbox div:nth-child(6) {
+    animation-delay: 20s;
+  }
+  
+  #sandbox div:nth-child(7) {
+    animation-delay: 24s;
+  }
